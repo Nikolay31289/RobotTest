@@ -4,13 +4,21 @@ package ua.in.evos;
 public class RobotConfig {
 
     private int robotId;
-    private String serverIp;
     private int serverPort;
     private int startPosition;
     private int platformLength;
+    private String serverIp;
     private String firstParameterName;
     private String secondParameterName;
     private String thirdParameterName;
+
+    public void setRobotId(int robotId) {
+        this.robotId = robotId;
+    }
+
+    public int getRobotId() {
+        return robotId;
+    }
 
     public String getFirstParameterName() {
 
@@ -35,10 +43,6 @@ public class RobotConfig {
 
     public void setThirdParameterName(String thirdParameterName) {
         this.thirdParameterName = thirdParameterName;
-    }
-
-    public RobotConfig(int robotId) {
-        this.robotId = robotId;
     }
 
     public String getServerIp() {
@@ -73,7 +77,4 @@ public class RobotConfig {
         this.platformLength = platformLength;
     }
 
-    public int getRobotId() {
-        return robotId;
-    }
 }

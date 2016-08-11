@@ -3,9 +3,10 @@ package ua.in.evos;
 
 public class RobotController {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        RobotConfig robotConfig = new RobotConfig(150);
+        RobotConfig robotConfig = new RobotConfig();
+        robotConfig.setRobotId(150);
         robotConfig.setServerIp("62.80.183.154");
         robotConfig.setServerPort(7880);
         robotConfig.setStartPosition(0);
