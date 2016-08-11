@@ -21,7 +21,6 @@ public class RobotConfig {
     }
 
     public String getFirstParameterName() {
-
         return firstParameterName;
     }
 
